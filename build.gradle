@@ -4,9 +4,7 @@ version '1.0-SNAPSHOT'
 buildscript {
     ext.kotlin_version = '1.1.2'
     ext.spark_version = '2.5.5'
-    ext.gson_version = '2.1.0'
-    ext.omise_version = '2.0.8'
-    
+
     repositories {
         mavenCentral()
     }
@@ -27,8 +25,8 @@ repositories {
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
     compile "com.sparkjava:spark-core:$spark_version"
-    compile "co.omise:omise-java:$omise_version"
-    compile "com.squareup.retrofit2:converter-gson:$gson_version"
+    compile "co.omise:omise-java:2.0.8"
+    compile "com.squareup.retrofit2:converter-gson:2.1.0"
 
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
